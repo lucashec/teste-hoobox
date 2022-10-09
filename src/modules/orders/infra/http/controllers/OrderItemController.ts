@@ -27,6 +27,7 @@ export class OrderItemController{
                     amount: orderItem.amount,
                     item: {
                         id: orderItem.item.id,
+                        name: orderItem.item.name,
                         price: orderItem.item.price,
                         description: orderItem.item.description,
                         category: orderItem.item.itemCategory.description

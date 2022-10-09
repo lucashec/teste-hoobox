@@ -1,0 +1,1039 @@
+{
+	"info": {
+		"_postman_id": "0dd10d11-10a6-461a-8771-868c63be1c98",
+		"name": "Hoobox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23775829"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Lucas\",\n\t\"email\":\"lucas1@email.com\",\n\t\"cpf\":\"113.323.931-33\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Lucas\",\n\t\"email\":\"lucas1@email.com\",\n\t\"cpf\":\"113.323.931-33\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"52-2BigRyNa4iyaRpXRmvVlYhn8FG4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:07:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Lucas\",\n        \"email\": \"lucas1@email.com\",\n        \"cpf\": \"113.323.931-33\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"Celulares\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"category"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"Celulares\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/items/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"items",
+								"category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f-OFPEqxwZimhFB56spxG5d5XnPc0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:10:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 1,\n        \"description\": \"Celulares\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Galaxy S22\",\n\t\"price\": 5000,\n\t\"description\": \"Smarthphone\",\n\t\"category\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateItem",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Galaxy S22\",\n\t\"price\": 5000,\n\t\"description\": \"Smarthphone\",\n\t\"category\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/items/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"items",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"65-Ccij6pQ+Nq7dSiHKYXMSvV+A5Yo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:16:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"item\": {\n        \"id\": 2,\n        \"name\": \"Galaxy S22\",\n        \"price\": 5000,\n        \"description\": \"Smarthphone\",\n        \"category\": \"Celulares\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateOrder",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"63-OiHNyaWBFhyWBnRs/Y3Br+91gfU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:17:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"order\": {\n        \"id\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Lucas\",\n            \"email\": \"lucas1@email.com\",\n            \"cpf\": \"113.323.931-33\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "AddOrderItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order\":1,\n\t\"amount\":1,\n\t\"item\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/order_item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"order_item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddOrderItem",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"order\":1,\n\t\"amount\":1,\n\t\"item\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/orders/order_item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"order_item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-bClbiTVXC2W7aR6J1yOoDzqB8vU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:23:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderItem\": {\n        \"id\": 1,\n        \"order\": {\n            \"confirmed\": false,\n            \"canceled\": false\n        },\n        \"amount\": 1,\n        \"item\": {\n            \"id\": 1,\n            \"price\": 3000,\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "RemoveOrderItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/order_item?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"order_item"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"description": "id do ordem_item, tabela intermediária que associa um item a uma order."
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RemoveOrderItem",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/order_item?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"order_item"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"description": "id do ordem_item, tabela intermediária que associa um item a uma order."
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"25-JnwbCuxE2T8q7rD2cHYyNXWBmNQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:30:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item deleted from order\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ConfirmOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/confirm?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"confirm"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "id da order a ser confirmada"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ConfirmOrder",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/confirm?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"confirm"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "id da order a ser confirmada"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-NFGIBxy6RyFFyl+AIqAFtSwsBTw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:33:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"order\": {\n        \"id\": 1,\n        \"confirmed\": true,\n        \"canceled\": false,\n        \"orderItems\": [\n            {\n                \"id\": 1,\n                \"amount\": 2,\n                \"price\": 3000,\n                \"name\": \"Iphone 14\",\n                \"description\": \"Smarthphone\",\n                \"category\": \"Celulares\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CancelOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/cancel?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"description": "id da order a ser cancelada"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CancelOrder",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/cancel?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"cancel"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"description": "id da order a ser cancelada"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-lqEmW7jQ7z9Q9zAsIlXS1ogUNgE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:36:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"order\": {\n        \"id\": 2,\n        \"confirmed\": false,\n        \"canceled\": true,\n        \"orderItems\": [\n            {\n                \"id\": 3,\n                \"amount\": 2,\n                \"price\": 3000,\n                \"name\": \"Iphone 14\",\n                \"description\": \"Smarthphone\",\n                \"category\": \"Celulares\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GetOrdersByUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/?user=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						""
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "1",
+							"description": "recebe o id do usuario e filtra as orders associadas a este."
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetOrdersByUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/?user=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								""
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "1",
+									"description": "recebe o id do usuario e filtra as orders associadas a este."
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "334"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14e-RLjFtPZnDA0uukUwLFiZmAHraMo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:39:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orders\": [\n        {\n            \"id\": 1,\n            \"confirmed\": true,\n            \"canceled\": false,\n            \"orderItems\": [\n                {\n                    \"id\": 1,\n                    \"amount\": 2,\n                    \"price\": 3000,\n                    \"name\": \"Iphone 14\",\n                    \"description\": \"Smarthphone\",\n                    \"category\": \"Celulares\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"confirmed\": false,\n            \"canceled\": true,\n            \"orderItems\": [\n                {\n                    \"id\": 3,\n                    \"amount\": 2,\n                    \"price\": 3000,\n                    \"name\": \"Iphone 14\",\n                    \"description\": \"Smarthphone\",\n                    \"category\": \"Celulares\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetItemsByCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/items/filter?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "recebe o id da category e lista os items associados a esta."
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetItemsByCategory",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/items/filter?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"items",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "recebe o id da category e lista os items associados a esta."
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-2S2OyOXwxaVS7gKIMa2jqwlU4+g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:41:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": 1,\n            \"price\": 3000,\n            \"name\": \"Iphone 14\",\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        },\n        {\n            \"id\": 2,\n            \"price\": 5000,\n            \"name\": \"Galaxy S22\",\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetAllItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/items/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllItems",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/items/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"items",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-ea1QwEV4ounOdHsTQWuvJXvzmZ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 15:45:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": 1,\n            \"price\": 3000,\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        },\n        {\n            \"id\": 2,\n            \"price\": 5000,\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        },\n        {\n            \"id\": 3,\n            \"price\": 1500,\n            \"description\": \"Smarthphone\",\n            \"category\": \"Celulares\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
