@@ -1,0 +1,9 @@
+node_modules
+coverage
+coverge
+dist/
+temp/*
+!temp/.gitkeep
+.vscode/
+postgres_data/
+.env

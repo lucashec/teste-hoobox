@@ -1,0 +1,10 @@
+
+POST http://localhost:3000/users
+
+{
+    "firstName":"lucas",
+    "lastName":"costa",
+    "phone_number": "(84)34332-0321",
+    "password": "234",
+    "email": "lucas@email.com"
+}
