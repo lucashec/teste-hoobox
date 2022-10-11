@@ -41,10 +41,10 @@ E então a API será iniciada na porta 3000.
 
 </br>
 
-### Link para acessar a collection no Postman
+### Link para importar a collection no Postman
 </br>
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/23775829-0dd10d11-10a6-461a-8771-868c63be1c98?action=collection%2Ffork&collection-url=entityId%3D23775829-0dd10d11-10a6-461a-8771-868c63be1c98%26entityType%3Dcollection%26workspaceId%3D16e26701-dec9-4b29-8a19-7de528ea5475)
+https://www.getpostman.com/collections/0787e1fd197fcd784490
 
 </br>
 
